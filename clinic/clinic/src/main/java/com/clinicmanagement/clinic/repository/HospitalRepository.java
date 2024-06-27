@@ -11,9 +11,7 @@ import java.util.List;
 
 public interface  HospitalRepository extends JpaRepository<Hospital,Integer> {
 
-    //@Query(value = "SELECT DISTINCT cr.city FROM Hospital cr")
-    //List<String> findByCity();
-
+    
     @Query(value = "SELECT h FROM Hospital h")
     public List<Hospital> getAllHospital();
 }
