@@ -123,10 +123,6 @@ public String deleteCity(@PathVariable int id){
     public List<Hospital> getAllHospital(){
         return hospitalService.getAllHospital();
 }
-//@GetMapping("/getCityByCityUsingJPQL/{city}")
-    //public List<City> getCityByCityUsingJPQL(@PathVariable String city){
-        //return cityService.getCityByCityUsingJPQL(city);
-//}
 
 
 
