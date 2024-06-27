@@ -73,13 +73,7 @@ public class ClinicController {
     public List<City>findAllClinics(){
         return cityRepository.findAll();
     }
-    //@GetMapping("/getInfo/{cityName}")
-    //public List<ClinicResponse> getLibraryFromCity(@PathVariable String cityName){
-        //return cityRepository.getPatientFromCity(cityName);
-
-    //@GetMapping("types")
-    //public List<String> getCityList(){
-       // return HospitalService.
+    
 
 
 @DeleteMapping("/delete/{pid}")
