@@ -19,8 +19,7 @@ public interface CityRepository extends JpaRepository<City,Integer> {
     @Query(value = "SELECT c FROM City c")
     public List<City> getAllUsersUsingJPAQL();
 
-    //@Query("SELECT c FROM City c where c.city=:u")
-    //public List<City> getCityByCityUsingJPQL(@Param("u") String city);
+    
 
     @Query("select c From City c WHERE c.city_name=:val")
     public List<City> getCityByName(@Param("val") String city_name);
